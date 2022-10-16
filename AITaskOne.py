@@ -68,7 +68,7 @@ def populateGraph():
 
     return False
 
-def drawBFS():
+ def drawBFS():
     # Generate BFS Path From The Sports Complex To Parking Lot
     bfs_path = bfs('SportsComplex', 'ParkingLot')
 
@@ -96,18 +96,18 @@ def drawBFS():
     
 
     # Create A Graph And Assign It To 'G' Variable
-G = nx.Graph()
-populateGraph()
+ G = nx.Graph()
+ populateGraph()
 
-# Dialogue Options To Choose Which Path The User Wants To See
-isValid = False
-while not isValid:
-    choice = input('Enter 1 for BFS Path or 2 for UCS Path: ')
-    if choice == '1':
-        isValid = True
-        drawBFS()
-    elif choice == '2':
-        isValid = True
-        drawUCS()
-    else:
-        print('Invalid Choice!! Try Again!')
+   # Dialogue Options To Choose Which Path The User Wants To See
+   isValid = False
+   while not isValid:
+     choice = input('Enter 1 for BFS Path or 2 for UCS Path: ')
+     if choice == '1':
+         isValid = True
+         drawBFS()
+     elif choice == '2':
+         isValid = True
+         drawUCS()
+     else:
+         print('Invalid Choice!! Try Again!')
