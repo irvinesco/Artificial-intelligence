@@ -30,3 +30,8 @@ for i in dataset1.columns:
     
 #Display for dataset1
 dataset1.head()    
+
+#classification of datatype1
+dataset1.dtypes
+
+dataset1.shape
