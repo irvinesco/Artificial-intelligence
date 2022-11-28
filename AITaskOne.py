@@ -6,7 +6,7 @@ import network as nx
 
 def populateGraph():
     # Add All The Nodes To The Graph In their respective postions
-        
+     ))
     G.add_node('SportsComplex', pos=(0,6))
     G.add_node('Siwaka', pos=(2,6))
     G.add_node('Phase1A', pos=(4,6))
