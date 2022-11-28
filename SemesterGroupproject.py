@@ -1,5 +1,5 @@
 #import libraries
-import matplotlib
+import matplotlib.pyplot as plt
 import sklearn
 import numpy as np
 import pandas as pd
@@ -14,8 +14,16 @@ dataset.describe()
 
 dataset.shape
 
+dataset.columns
+
+#Check for value counts
+dataset['owner'].value_counts()
+
 #plot a bar graph
-dataset['km_driven'].value_counts().plot(kind='bar', figsize=(20,10))
+dataset['owner'].value_counts().plot(kind='bar', figsize=(20,10))
+
+import seaborn as sns
+sns.countplot(dataset['owner'])
 
 #classification of datatype
 dataset.dtypes
@@ -31,7 +39,10 @@ for i in dataset1.columns:
 #Display for dataset1
 dataset1.head()    
 
+dataset.describe()
 #classification of datatype1
 dataset1.dtypes
 
 dataset1.shape
+
+
