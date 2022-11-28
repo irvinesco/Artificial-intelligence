@@ -20,10 +20,16 @@ dataset.columns
 
 #Check for value counts
 dataset['owner'].value_counts()
+
 #Check no of cars going for less than 250000
 dataset[dataset['selling_price']<250000].count()['selling_price']
+#Display the dataset
+dataset[dataset['selling_price']<250000]
+
 #Check no of cars going for more than 250000
 dataset[dataset['selling_price']>250000].count()['selling_price']
+#Display the dataset
+dataset[dataset['selling_price']>250000]
 
 #plot a bar graph
 dataset['owner'].value_counts().plot(kind='bar', figsize=(20,10))
